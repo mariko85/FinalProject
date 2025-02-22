@@ -1,0 +1,38 @@
+
+
+@media (max-width:650px)  {
+    .div_course_news{
+
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .div_course_news:nth-child(1) {
+        width: 50%;
+    }
+.div_course_news{
+    width: 50%;
+}
+
+.div_teacher_about{
+
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.div_teacher_abou:nth-child(1) {
+    width: 50%;
+}
+.div_teacher_abou{
+width: 50%;
+}
+
+
+navigation{
+    display: none;
+}
+}
+
+
