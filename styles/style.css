@@ -1,5 +1,11 @@
+
 .header_logo{
     width:100px;
+}
+
+
+body{
+    font-family: "Roboto", serif;
 }
 
 header{
@@ -32,7 +38,7 @@ a{
 
 
 body{
-    height: 15000px;
+   
     font-family: 'ALK Life';
     color: rgb(239, 235, 243);
 }
@@ -44,6 +50,7 @@ body{
     margin-top: 100px;
     object-fit: cover;
     position: relative;
+    z-index: -1;
 }
 
 
@@ -58,11 +65,13 @@ body{
 
 
 .div_course{
-    width: 350px;
+    width: 320px;
     color: aliceblue;
 
     padding: 20px;
     background-color:rgb(168, 92, 179);
+    border : 2px solid silver;
+    border-radius: 30px;
 }
 
 .div_course_news {
@@ -73,14 +82,14 @@ body{
 }
 
 
-/* h2{
+h2{
     margin-top: 30px;
-    color: white;
-} */
+    color: rgb(122, 15, 96);
+}
 
-h3{
-    color: blueviolet;
-    margin-top: 30px;
+h3,p{
+    color: white;
+    padding: 20px ;
 }
 
 
@@ -92,15 +101,129 @@ h3{
 
 } 
 .div_teacher{
-    width: 350px;
-    color: aliceblue;
-
+    width: 320px;
+    color: rgb(163, 10, 168);
     padding: 20px;
-    background-color:rgb(168, 92, 179);
-
+    border : 2px solid silver;
+    border-radius: 30px;
 }
 
 .course_about
 {
     color: white;
 }
+
+
+.div_course_image{
+    width: 260px;
+    opacity: 1.0;
+  }
+  
+  .div_course_image:hover {
+    opacity: 0.5;
+  }
+
+ 
+
+
+ .burger{
+    color: rgb(8, 8, 8);
+    font-size: 30px;
+    display: none;
+  }
+
+
+  .footer_div{
+    margin-top: 100px;
+    height: 200px;
+    width: 100%;
+    background-color: rgb(230, 124, 221);
+  }
+
+
+  /* contact */
+
+  .section_contaqt{ 
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    
+   
+}
+
+.contact_info{
+    margin-top: 250px;
+    width: 500px;
+    height: 400px;
+     border: 5px solid silver; 
+background-color: aqua;
+color: black;
+font-size: 20px;
+}
+
+
+
+
+.contact_info li {
+    margin-top: 30px;
+
+
+}
+
+
+
+
+.div_fname ,.div_Email, .div_phone, .div_subject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid silver;
+    width: 200px;
+    height: 40px;
+    margin-left: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+}
+
+
+.div_email_fname , .div_phone_subject{
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+.div_messige{
+    margin-top: 20px;
+    width: 440px;
+    height: 200px;
+    margin-left: 50px;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+
+.div_send_messige{
+    margin-left: 50px;
+}
+
+
+.div_frame{
+    margin-top: 100px;
+}
+
+
+
+body{
+    font-family: "Roboto", serif;
+}
+
+
+.button_messige{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(224, 85, 224);
+    border-radius: 10px;
+}
+

@@ -5,34 +5,99 @@
 
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         gap: 20px;
     }
 
-    .div_course_news:nth-child(1) {
-        width: 50%;
-    }
-.div_course_news{
-    width: 50%;
+
+    .div_course{
+    width: 40%;
 }
 
 .div_teacher_about{
 
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
-.div_teacher_abou:nth-child(1) {
+
+.div_teacher{
     width: 50%;
+    }
+
+.navigation{
+    display: none;
 }
-.div_teacher_abou{
+
+
+.burger{
+    display: block;
+}
+
+.activeNavigation{
+    display: block;
+}
+
+.navigation{
+    flex-direction: column;
+    background-color: aqua;
+    position: absolute;
+    left: 50px;
+    top: 70px;
+    width: 200px;
+    height: 200px;
+}
+
+
+.section_contaqt{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact_info{
+    width: 70%;
+}
+
+}
+
+
+
+
+
+@media (max-width:512px)  {
+    .div_course_news{
+
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    .div_course{
+    width: 80%;
+}
+
+.div_teacher_about{
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.div_teacher{
 width: 50%;
 }
 
-
-navigation{
+.navigation{
     display: none;
 }
+
+.burger{
+    display: block;
 }
 
-
+}
