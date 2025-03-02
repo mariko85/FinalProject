@@ -44,14 +44,17 @@
 
 .navigation ul{
     flex-direction: column;
-    background-color: aqua;
     position: absolute;
-    left: 50px;
-    top: 170px;
+    left: 10px;
+    top: 105px;
     width: 300px;
     height: 300px;
+    
 }
 
+.nav_li{
+    margin-top: 15px;
+}
 
 .section_contaqt{
     display: flex;

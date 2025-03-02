@@ -158,7 +158,7 @@ h3,p{
     width: 500px;
     height: 400px;
      border: 5px solid silver; 
-background-color: aqua;
+background-color: rgb(240, 152, 225);
 color: black;
 font-size: 20px;
 }
@@ -232,6 +232,100 @@ body{
 
 .fa-bars, .fa-times{
 position: absolute;
-top:20px;
+/* //top:15px */
 right:10px;
+}
+
+
+.burger{
+    
+ 
+    position: relative;
+    display: none;
+  }
+
+
+  .conteiner{
+    margin-top: 300px;
+    
+  }
+
+
+  .conteiner_user ul{
+    display: flex;
+    justify-content: center;
+
+  }
+
+
+  .conteiner_user li{
+margin-top: 150px;
+    color: black;
+  }
+
+  .conteiner_user img{
+    opacity: 1;
+  width: 250px;
+  border-radius: 20px;
+  } 
+
+
+  .image_aboutPage_cover{
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    border-radius: 30px;
+    object-fit: cover;
+    opacity: 1;
+    
+  }
+  .conteiner_user img:hover{
+    opacity: 0.5;
+  }
+
+.loadnext, .loadprev{
+ 
+ font-size: 25px; 
+ background-color: rgb(163, 10, 168);
+   margin-top: 50px;
+   border-radius: 20px;
+}
+
+
+
+
+
+.about_Page_textconteiner , .about_Page_box p{
+    font-size: 20px;
+color: rgb(65, 62, 62);
+    display: flex;
+    justify-content: center;
+    margin:20px;
+  
+}
+
+.about_Page_box {
+    background-color: rgb(221, 142, 228);
+    margin-left: 20px;
+    border: 1 solid rgb(37, 35, 35);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.about_Page_box b{
+    color:black
+}
+
+
+.student_peedback{
+    font-size: 30px;
+    color: rgb(190, 35, 131);
+    margin:50px;
+}
+
+.footer_div ul li{
+    
+    color: black;
+   font-size: 20px;
+   margin-top: 20px;
 }
