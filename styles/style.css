@@ -108,6 +108,11 @@ h3,p{
     border-radius: 30px;
 }
 
+
+#course_about{
+    margin-top: 150px;
+}
+
 .course_about
 {
     color: white;
@@ -115,7 +120,7 @@ h3,p{
 
 
 .div_course_image{
-    width: 260px;
+    width: 310px;
     opacity: 1.0;
   }
   
@@ -134,14 +139,36 @@ h3,p{
   }
 
 
+
+  
+
+.fa-bars, .fa-times{
+    position: absolute;
+    /* //top:15px */
+    right:10px;
+    }
+    
+   
+    
+
+
   .footer_div{
     margin-top: 100px;
     height: 200px;
     width: 100%;
-    background-color: rgb(230, 124, 221);
+    background-color: rgb(240, 133, 231);
+    
   }
 
+.fa-solid .fa-regular .fa-solid
+{
+    color: black;
+    background-color: black;
+}
 
+.emailColor{
+    color: black;
+}
   /* contact */
 
   .section_contaqt{ 
@@ -230,21 +257,6 @@ body{
 
 
 
-.fa-bars, .fa-times{
-position: absolute;
-/* //top:15px */
-right:10px;
-}
-
-
-.burger{
-    
- 
-    position: relative;
-    display: none;
-  }
-
-
   .conteiner{
     margin-top: 300px;
     
@@ -328,4 +340,218 @@ color: rgb(65, 62, 62);
     color: black;
    font-size: 20px;
    margin-top: 20px;
+}
+
+
+/* //accordion  */
+.accordion{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.Wraper-body {
+    background-color: rgb(224, 85, 224);
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.accordion-conteiner{
+    max-width: 870px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.fontColor{
+    color: rgb(226, 232, 235);
+}
+
+.fontSize {
+    font-size: 20px;
+
+}
+
+
+.accordion-title{
+    position: relative;
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+.accordion-title::before{
+    content: " +";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:20px;
+    font-size: 25px;
+}
+.accordion h2 {
+    font-size: 27px;
+    padding-top: 80px;
+
+
+}
+
+.last{
+    padding-bottom: 80px;
+}
+
+.accordion-description {
+    width: 100%;
+    font-size: 16px;
+    padding: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+
+.line{
+    width: 100%;
+    height: 0.5px;
+    background-color: aliceblue;
+
+}
+
+.accordion-conteiner.active .accordion-description{
+    height: 200px;
+    padding: 10px;
+
+}
+
+.accordion-conteiner.active .accordion-title::before{
+content:  "-";
+font-size: 25px;
+}
+
+
+/* slider */
+
+
+#slider{
+    width: 50%;
+    height: 50vh;
+    position: relative;
+    margin: 0 auto;
+  top: 103px;
+  z-index: -1;    
+}
+
+
+.arrow{
+    position: absolute;
+    top: 60%;
+    transform: translateY(-70%);
+    width: 50px;
+    height: 50px;
+    background-color: rgb(224, 85, 224);
+    border-radius: 20%;
+    color: aliceblue;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    z-index: 2;
+}
+
+.arrow-left{
+    left:475px;
+}
+.arrow-right{
+    right: 470px;
+}
+
+.arrow:hover{
+    border:  2px solid white;
+}
+
+.slider-title{
+position: absolute;
+top: 10%;
+left: 30%;
+font-size: 3rem;
+letter-spacing: 0.15rem;
+color: beige;
+padding: 20px 70px;
+text-align: center;
+
+}
+
+
+
+
+.dot{
+    width: 65px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:black;
+    margin: 5px;
+    opacity: 40%;
+}
+
+.dot.active{
+    background-color: rgb(240, 255, 242);
+}
+
+
+.dots{
+    display: flex;
+    position: absolute;
+    z-index: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.registration-form{
+   display: none;
+   position: relative;    
+    font-size: 25px;
+    color: black;
+   
+  
+    
+    
+}
+
+.activeRF {
+    display: block;
+    position: absolute; 
+    transform: translate(-50%,-50%);
+    top: 43%;
+    left: 50%;
+    background-color: rgb(250, 250, 250);
+    width: 800px;
+   
+    
+}
+
+
+.courseAboutActivi{
+    opacity: 0.2;
+}
+
+.inputSize{
+    margin-top:40px;
+    margin-left: 150px;
+    font-size: 25px;
+    color: black;
+    
+}
+
+#sendButon{
+  font-size: 30px;
+   margin-top: 45px;
+  margin-left: 140px;
+  margin-bottom: 25px;
+  background-color: rgb(231, 22, 203);
+
 }
