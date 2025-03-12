@@ -94,7 +94,7 @@
 
 
 
-@media (max-width:440px)  {
+@media (max-width:400px)  {
     .div_course_news{
 
         flex-wrap: wrap;
@@ -125,6 +125,35 @@ width: 50%;
 
 .burger{
     display: block;
+}
+
+
+
+
+
+.navigation{
+    display: none;
+}
+
+
+.burger{
+    display: block;
+    margin-left: 150px;
+}
+
+.activeNavigation{
+    display: block;
+    flex-direction: column;
+}
+
+.navigation ul{
+    flex-direction: column;
+    position: absolute;
+    left: 5px;
+    top: 30px;
+    width: 100px;
+    height: 100px;
+    
 }
 
 }
