@@ -53,8 +53,10 @@ function getUsers(page ){
             li.textContent=item.first_name + " " + item.last_name ;
             let image =document.createElement('img')
             image.src=item.avatar
-            fragment.appendChild(li)
-            fragment.appendChild(image)
+            let divliimage=document.createElement('div')
+            divliimage.appendChild(li)
+            divliimage.appendChild(image)
+            fragment.appendChild(divliimage)
 
         })
 

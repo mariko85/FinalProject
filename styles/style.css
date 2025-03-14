@@ -273,13 +273,13 @@ font-size: 20px;
      margin-top: 150px;
      font-size: 25px;
     color: rgb(180, 31, 160);
-    margin-left: 40px;
+    margin-left: 20px;
     padding: 30px;
   }
 
   .conteiner_user img{
     opacity: 1;
-  width: 250px;
+  width: 200px;
   border-radius: 20px;
   margin-left: 20px;
   } 
@@ -512,7 +512,7 @@ text-align: center;
 
 .dot.active{
     background-color: aliceblue;
-
+    
 }
 
 
