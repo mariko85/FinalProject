@@ -1,6 +1,6 @@
 
 
-@media (max-width:740px)  {
+@media (max-width:768px)  {
     .div_course_news{
 
         flex-wrap: wrap;
@@ -11,8 +11,33 @@
 
 
     .div_course{
-    width: 40%;
+    width: 35%;
 }
+
+#slider{
+    width: 50%;
+    height: 65vh;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 105px;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+
+.caver_photo {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image_aboutPage_cover {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
 
 .div_teacher_about{
 
@@ -21,7 +46,6 @@
     align-items: center;
     gap: 20px;
 }
-
 
 .div_teacher{
     width: 50%;
@@ -49,6 +73,8 @@
     top: 105px;
     width: 300px;
     height: 300px;
+    background-color: aliceblue;
+    opacity: 0.5;
     
 }
 
@@ -94,7 +120,7 @@
 
 
 
-@media (max-width:400px)  {
+@media (max-width:428px)  {
     .div_course_news{
 
         flex-wrap: wrap;
@@ -123,17 +149,7 @@ width: 50%;
     display: none;
 }
 
-.burger{
-    display: block;
-}
 
-
-
-
-
-.navigation{
-    display: none;
-}
 
 
 .burger{
@@ -155,5 +171,21 @@ width: 50%;
     height: 100px;
     
 }
+
+
+
+
+.caver_photo {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image_aboutPage_cover {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 
 }

@@ -21,6 +21,13 @@ else {
 })
 
 
+
+
+
+
+
+
+// serveridan wamogeba inforamciis
 let currentPage =1
 let totalPages
 
@@ -96,46 +103,7 @@ function getUsers(page ){
 
 
 
-  
-// function getUser(){
-// fetch ('https://reqres.in/api/users?page=1',{
-//     method:"GET"
-// })
-
-// .then(function(response){
-//    if(response.status !== 200){
-//    throw response.status
-//    }
-//    return response.json()
-
-// })
-
-// .then(function(responseData){
-// let conteiner=document.getElementById('conteiner')
-// let ul = document.createElement('ul')
-// responseData.data.forEach(function(item){
-//         let li = document.createElement('li')
-//     li.textContent=item.email
-//     let image=document.createElement('img')
-//     image.src=item.avatar
-//     ul.appendChild(li)
-//     ul.appendChild(image)
-//     conteiner.appendChild(ul)
-// })
-
-// })
-
-// .catch(function() {
-
-// let conteiner=document.getElementById('conteiner')
-// let p=document.createElement('p')
-// p.textContent="ერრორ"
-// conteiner.appendChild(p)
-// })
-
-
-// }
-
+// acoreioni
 
 let accordion = document.querySelectorAll('.accordion-conteiner')
 accordion.forEach( item => {
@@ -149,18 +117,23 @@ accordion.forEach( item => {
 })
 
 
+// registracia
 
 let courseButton = document.querySelectorAll('.registration-course-button')
 let registrationform = document.getElementById('registration-form')
 let courseAbout =document.getElementById('course_about')
+
+
 console.log(courseButton)
 
 courseButton.forEach(item => {
-    addEventListener('click',function(){
+    item.addEventListener('click',function(){
         registrationform.classList.add('activeRF')
         courseAbout.classList.add('courseAboutActivi')
     
 });
+
+
 
 
 })

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +11,30 @@
     <link rel="stylesheet" href="styles/responsive.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body id="body_contact">
+<body>
     <header>
         <a href="index.html">  <img class="header_logo" src="images/logo.svg" alt="logo" title=" logo"> </a> 
-        <nav class="navigation">
+        
+        <nav class="navigation   " id="navigation">
             <ul >       
-                 <li class="nav_li" ><a href="index.html" target="_blank"> მთავარი</a> </li>
-                <li class="nav_li"><a href="courses.html" target="_blank"> კურსები</a> </li>
-                <li class="nav_li"><a href="about.html" target="_blank"> ჩვენს შესახებ</a> </li>
-                <li class="nav_li"><a href="contact.html" target="_blank"> კონტაქტი</a> </li>
+                 <li class="nav_li" ><a href="index.html" target="_blank" class="titleSize headerA"> მთავარი</a> </li>
+                <li class="nav_li"><a href="courses.html" target="_blank" class="titleSize headerA"> კურსები</a> </li>
+                <li class="nav_li"><a href="about.html" target="_blank" class="titleSize headerA"> ჩვენს შესახებ</a> </li>
+                <li class="nav_li"><a href="contact.html" target="_blank" class="titleSize headerA"> კონტაქტი</a> </li>
             </ul>
         </nav>
-        <div class="burger">
+
+
+        <div class="burger" id="burger">
             <i class="fa-solid fa-bars"></i>
         </div>
         
-   
+        
 
     </header>
     <main>
@@ -43,79 +48,102 @@
                     <li><i class="fa-solid fa-location-dot"></i> Store Location: Tbilisi   </li>
                 </ul>
             </div>
+            <div class="contact_info">
 
-
-            <div class="contact_info"> 
-                <div class="div_email_fname">   
-                 <div class="div_fname"> 
-                    <i class="fa-regular fa-user" ></i>
-                    <form action="#">
-                        <label for=" fname">  </label>
-                        <input type="text" id="fname" name="fname" placeholder="Firs name">           
-                    </form>
-                 </div>
-                   <div class="div_Email"> 
-                    <i class="fa-regular fa-envelope"></i>
-                    <form action="#">
-                        <label for=" Email">  </label>
-                        <input type="text" id="Email" name="Email" placeholder="Email address">         
-                    </form>
-                    </div>
-                </div>
-
-               <div class="div_phone_subject">   
-                <div class="div_phone"> 
-                    <i class="fa-solid fa-phone"></i>
-                    <form action="#">
-                        <label for=" Phone">  </label>
-                        <input type="text" id="phone" name="phone" placeholder="Phone Number">           
-                    </form>
-               </div>
-               <div class="div_subject"> 
-                <i class="fa-light fa-subtitles"></i>
                 <form action="#">
-                    <label for=" subject">  </label>
-                    <input type="text" id="subject" name="subject" placeholder="Subject">
-                            
-                 </form>
-               </div>
-              
-            </div>
-            <div class="div_messige">
-                <label for="Messige"></label>
-                <input type="text" name="messige" placeholder="Write Your Messige">
-               </div>
+                    <div>
+                        <label for=" fname"> Firs name  </label>
+                        <div>
+                            <i class="fa-regular fa-user" ></i>
+                        <input type="text" id="fname"  class="formsize" name="fname" placeholder="Firs name">   
 
-            <div class="div_send_messige">
+                        </div>
+                        
+                        
+
+                    </div>
+
+                    <div>
+                       <label for=" fname">Last Name   </label> 
+                       <div>
+                        <i class="fa-regular fa-user" ></i>
+                            <input type="text" id="fname"  class="formsize" name="fname" placeholder="las name">  
+
+                       </div>   
+                           
+                    </div>
+
+                    <div>
+
+                        <label for=" Email"> Email address </label>
+                        <div>
+                            <i class="fa-regular fa-envelope"></i>
+                        <input type="text" id="Email"   class="formsize" name="Email" placeholder="Email address"> 
+
+                        </div>
+                          
+                    </div>
+                    
+                    
+
+                    <div>
+                        <label for=" Phone">  Phone Number</label>
+                        <div>
+                            <i class="fa-solid fa-phone"></i>                   
+                        <input type="text" id="phone"  class="formsize" name="phone" placeholder="Phone Number">   
+
+                        </div>
+                        
+
+                    </div>
+                    <div>
+                        <label for="Messige">Write Your Messige</label>
+                        <div>
+                            <input type="text" name="messige" class="SendMessige"  placeholder="Write Your Messige">
                 <button class="button_messige"> Send Messige </button>
+
+                        </div>
+                
+            
+                    </div>
+
+                </form>
+
             </div>
+
+
              
         </section>
         <section>
-            <div class="div_frame">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.513710382149!2d44.7725128!3d41.7094325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40447332acdf7f45%3A0xcbdc36abfdadff08!2s11%20Ilia%20Chavchavadze%20Avenue%2C%20T&#39;bilisi!5e0!3m2!1sen!2sge!4v1740498322715!5m2!1sen!2sge" width="100%" height="450" style="border: 1px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+            <div class="div_frame" style="width: 800px; margin-left: 640px; padding-top: 30px;">
+                <iframe   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.513710382149!2d44.7725128!3d41.7094325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40447332acdf7f45%3A0xcbdc36abfdadff08!2s11%20Ilia%20Chavchavadze%20Avenue%2C%20T&#39;bilisi!5e0!3m2!1sen!2sge!4v1740498322715!5m2!1sen!2sge" width="100%" height="450" style="border: 1px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
              </div>
 
         </section>
     </main>
     <footer>
-    
-   
-    
+
+        
+        <div class="footer_div  textSize" >
+            <h2 class="footertextColor " style="font-size: 40px; padding: 20px;"  >საკონტაქტო ინფორმაცია </h2> 
+                <ul class="footertextColor" >
+                    <li> <i class="fa-solid fa-phone"  class="footertextColor"></i>  <a class="footertextColor" class="textSize" href="tel:+995577422760">Phone Number: 577422760 </a>    </li>
+
+                    <li><i class="fa-regular fa-envelope" class="footertextColor"> </i> <a   class="footertextColor" class="textSize" href="mailto:someone@example.com"> Email Address: chhvashvili.mari1@teachers.gov.ge </a>  </li>
+                    <li><i class="fa-solid fa-location-dot" class="footertextColor"></i> Store Location: Tbilisi   </li>
+                </ul>
+            </div>
             
-        <div class="footer_div">
-            Contact Information
-            <ul>
-                <li> <i class="fa-solid fa-phone">  <a href="tel:+995577422760">Phone Number: 577422760 </a>    </i></li>
-                <li><i class="fa-regular fa-envelope"></i> <a href="mailto:someone@example.com"> Email Address: chhvashvili.mari1@teachers.gov.ge </a>  </li>
-                <li><i class="fa-solid fa-location-dot"></i> Store Location: Tbilisi   </li>
-            </ul>
-        </footer>
-      
+
+   
+
+    
+
+</footer>
 
 
 
-    <script src="script.js"> </script>
+        <script src="script.js"></script>
     
 </body>
 </html>

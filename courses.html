@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
@@ -8,26 +8,32 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/responsive.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
         <a href="index.html">  <img class="header_logo" src="images/logo.svg" alt="logo" title=" logo"> </a> 
-        <nav class="navigation">
+        
+        <nav class="navigation   " id="navigation">
             <ul >       
-                 <li class="nav_li" ><a href="index.html" target="_blank"> მთავარი</a> </li>
-                <li class="nav_li"><a href="courses.html" target="_blank"> კურსები</a> </li>
-                <li class="nav_li"><a href="about.html" target="_blank"> ჩვენს შესახებ</a> </li>
-                <li class="nav_li"><a href="contact.html" target="_blank"> კონტაქტი</a> </li>
+                 <li class="nav_li" ><a href="index.html" target="_blank" class="titleSize headerA"> მთავარი</a> </li>
+                <li class="nav_li"><a href="courses.html" target="_blank" class="titleSize headerA"> კურსები</a> </li>
+                <li class="nav_li"><a href="about.html" target="_blank" class="titleSize headerA"> ჩვენს შესახებ</a> </li>
+                <li class="nav_li"><a href="contact.html" target="_blank" class="titleSize headerA"> კონტაქტი</a> </li>
             </ul>
         </nav>
-        <div class="burger">
+
+
+        <div class="burger" id="burger">
             <i class="fa-solid fa-bars"></i>
         </div>
         
         
 
-    </header> 
+    </header>
     <main>
         <section >
             <div class="slider" id="slider">
@@ -48,8 +54,8 @@
         </section>
 
         <section class="course_about" id="course_about">
-            <h2> მიმდინარე  კურსები </h3> 
-            <div class="div_course_news"> 
+            <h2 class="titleSize"> მიმდინარე  კურსები </h2> 
+            <div class="div_course_news textSize" > 
             <div  class="div_course"> 
                 <h3> კურსის დასახელება : UI/UX Design</h3>
                 <img class="div_course_image"src="images/UX Design.png" alt="" width="350px" height=" 200px">
@@ -70,7 +76,7 @@
             <div  class="div_course"> 
                 <h3> კურსის დასახელება : Advanced Javascript</h3>
                 <img class="div_course_image" src="images/Advanced Javascript.jpg" alt="" width="350px" height=" 200px">
-                <p> კურსის მოკლე აღწერა -კურსის ფარგლებში შეისწავლი  Javascript-ის საწყისებს.
+                <p> კურსის მოკლე აღწერა -კურსის ფარგლებში შეისწავლი  Javascript-ის საწყისებს.გაიგებ, როგორ უნდა შექმნა მცირე და საშუალო ზომის აპლიკაციები ამ ტექნოლოგიის გამოყენებით
                 </p>
                 <button class="registration-course-button" id="registration-course-button"> რეგისტრაცია</button>
             
@@ -78,7 +84,8 @@
             <div  class="div_course"> 
                 <h3> კურსის დასახელება : Front-End Web Development</h3>
                 <img class="div_course_image" src="images/Frontend-Development-.webp" alt="" width="350px" height=" 200px">
-                <p> კურსის მოკლე აღწერა: კურსის განმავლობაში გაეცნობი იმ პროგრამულ ინსტრუმენტებს (Front End: HTML, CSS), რომელთა გამოყენებითაც შეძლებ ვებგვერდის აწყობას და შეისწავლი ამ პროცესს. </p>
+                <p> კურსის მოკლე აღწერა: კურსის განმავლობაში გაეცნობი იმ პროგრამულ ინსტრუმენტებს (Front End: HTML, CSS),
+                     რომელთა გამოყენებითაც შეძლებ ვებგვერდის აწყობას და შეისწავლი ამ პროცესს. </p>
                 <button class="registration-course-button" id="registration-course-button"> რეგისტრაცია</button>
 
             </div>
@@ -86,22 +93,13 @@
 
         </div>
 
-    
-
-        <div class="div_course_news"> 
-            <div  class="div_course"> 
-                <h3> კურსის დასახელება :Digital Marketing ციფრული მარკეტინგი</h3>
-                <img class="div_course_image"src="images/Digital-marketing.jpg" alt="" width="350px" height=" 200px">
-                <p> კურსის მოკლე აღწერა -სასწავლო კურსის ფარგლებში გაეცნობი სოციალურ მედიასთან და ზოგადად, ინტერნეტ კულტურასთან დაკავშირებულ მნიშვნელოვან საკითხებს..
-                </p>
-                <button class="registration-course-button" id="registration-course-button"> რეგისტრაცია</button>
-                
-            </div>
+        <div class="div_course_news  textSize"> 
+            
             <div  class="div_course" > 
                 <h3> კურსის დასახელება : Mobile App Development</h3>
                 <img class="div_course_image" src="images/Mobile App Development.png" alt="" width="350px" height=" 200px">
                 <p> კურსის მოკლე აღწერა-კურსის განმავლობაში გაეცნობი მობილური აპლიკაციის შექმნის ძირითად პრინციპებს, რაშიც დაგეხმარება MIT-ის პროგრამა App Inventor-ი.
-                     ისწავლი მობილური მოწყობილობის მუშაობის ძირითად პრინციპებს. დაეუფლები  პროგრამირების ენა Dart-ს და Flutter ფრეიმვორკს
+                     ისწავლი მობილური მოწყობილობის მუშაობის ძირითად პრინციპებს.  
                 </p>
                 <button class="registration-course-button" id="registration-course-button"> რეგისტრაცია</button>
 
@@ -109,7 +107,7 @@
             <div  class="div_course"> 
                 <h3> კურსის დასახელება : ეთიკური ჰაკინგი</h3>
                 <img class="div_course_image" src="images/haking.jpg" alt="" width="350px" height=" 200px">
-                <p> კურსის მოკლე აღწერა -კურსის ფარგლებში ისინი გაეცნობიან განსხვავებული სახის მეთოდოლოგიებს, მიდგომებს და ისწავლიან, როგორ იაზროვნონ „ჰაკერის“ მსგავსად.
+                <p> კურსის მოკლე აღწერა -კურსის ფარგლებში  გაეცნობით, მიდგომებს და ისწავლით, როგორ იაზროვნო „ჰაკერის“ მსგავსად.
                     მანქანების „გატეხვასთან“ ერთად მსმენელები გაეცნობიან თავდაცვის განსხვავებულ მეთოდებსა და მიდგომებს.
                 </p>
                 <button class="registration-course-button" id="registration-course-button"> რეგისტრაცია</button>
@@ -118,9 +116,19 @@
             <div  class="div_course"> 
                 <h3> კურსის დასახელება : თამაშების დეველოპმენტი UNITY</h3>
                 <img class="div_course_image" src="images/gamingdevel.jpg" alt="" width="350px" height=" 200px">
-                <p> კურსის მოკლე აღწერა: კურსის ფარგლებში შეისწავლით კომპიუტერული თამაშების შექმნას Unity-ში . </p>
+                <p> კურსის მოკლე აღწერა: კურსის ფარგლებში შეისწავლით კომპიუტერული თამაშების შექმნას Unity-ში .Unity-ს საშუალებით შექმნილი თამაშები, შეიძლება 20-ზე მეტ პლათფორმაზე გაეშვას </p>
                 <button class="registration-course-button" id="registration-course-button"> რეგისტრაცია</button>
 
+            </div>
+
+
+            <div  class="div_course"> 
+                <h3> კურსის დასახელება :Digital Marketing ციფრული მარკეტინგი</h3>
+                <img class="div_course_image"src="images/Digital-marketing.jpg" alt="" width="350px" height=" 200px">
+                <p> კურსის მოკლე აღწერა -სასწავლო კურსის ფარგლებში გაეცნობი სოციალურ მედიასთან და ზოგადად, ინტერნეტ კულტურასთან დაკავშირებულ მნიშვნელოვან საკითხებს..
+                </p>
+                <button class="registration-course-button" id="registration-course-button"> რეგისტრაცია</button>
+                
             </div>
         </div>
 
@@ -132,11 +140,17 @@
     
     <section >
         
+        
      <div class="registration-form" id="registration-form">
+        <!-- <div class="activeClose">
+
+        </div> -->
+        <button style="margin-left: 760px;" class="closeButton" id="closeButton"> X</button>   
         <h2 class="inputSize">
 
             გთხოვთ შეავსოთ შესაბამისი ველები.
         </h2>
+     
      <form action="" method=""   >
      <div  > 
          <input type="text" name="firstName " class="inputSize" id="firstName" placeholder="firstName">
@@ -193,31 +207,36 @@
 
 
 
-        <div style="height: 700px;"> </div>
-
+        
 
 
 
     </main>
     <footer>
-    
-       
-    
+
+        
+        <div class="footer_div  textSize" >
+            <h2 class="footertextColor " style="font-size: 40px; padding: 20px;"  >საკონტაქტო ინფორმაცია </h2> 
+                <ul class="footertextColor" >
+                    <li> <i class="fa-solid fa-phone"  class="footertextColor"></i>  <a class="footertextColor" class="textSize" href="tel:+995577422760">Phone Number: 577422760 </a>    </li>
+
+                    <li><i class="fa-regular fa-envelope" class="footertextColor"> </i> <a   class="footertextColor" class="textSize" href="mailto:someone@example.com"> Email Address: chhvashvili.mari1@teachers.gov.ge </a>  </li>
+                    <li><i class="fa-solid fa-location-dot" class="footertextColor"></i> Store Location: Tbilisi   </li>
+                </ul>
+            </div>
             
-        <div class="footer_div">
-            Contact Information
-            <ul>
-                <li> <i class="fa-solid fa-phone">  <a href="tel:+995577422760">Phone Number: 577422760 </a>    </i></li>
-                <li><i class="fa-regular fa-envelope"></i> <a class="emailColor" href="mailto:someone@example.com"> Email Address: chhvashvili.mari1@teachers.gov.ge </a>  </li>
-                <li><i class="fa-solid fa-location-dot"></i> Store Location: Tbilisi   </li>
-            </ul>
-        </footer>
+
+   
+
+    
+
+</footer>
       
 
 
 
   <script src="script1.js"> </script>
- 
+  
     
 </body>
 </html>
