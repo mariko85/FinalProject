@@ -151,10 +151,10 @@
             გთხოვთ შეავსოთ შესაბამისი ველები.
         </h2>
      
-     <form action="" method=""   >
+     <form action="" method="POST"  id="registrationForm">
      <div  > 
          <input type="text" name="firstName " class="inputSize" id="firstName" placeholder="firstName">
-         <span class="errorText" id="firstName"></span>
+         <span class="errorText" id="error_firstName"></span>
      </div> 
      
      <div > 
@@ -163,21 +163,21 @@
      </div>
     
      <div > 
-         <input type="text" name="idNumber" id="idNumbe" class="inputSize"  placeholder="idNumbe">
-         <span class="errorText" id="error_idNumbe"></span>
+         <input type="text" name="idNumber" id="idNumber" class="inputSize"  placeholder="idNumbe">
+         <span class="errorText" id="error_idNumber"></span>
      </div>
 
      <div>
         
        
         <input type="text" id="phone" name="phone" class="inputSize" placeholder="Phone Number">   
-        <span class="errorText" id="error_Phone"></span>
+        <span class="errorText" id="error_phone"></span>
         
      </div>
 
      <div>
-      <input type="text" id="Email" name="Email" class="inputSize" placeholder="Email address">
-      <span class="errorText" id="error_Email"></span>
+      <input type="text" id="email" name="email" class="inputSize" placeholder="Email address">
+      <span class="errorText" id="error_email"></span>
      </div>
      <div class="inputSize">
 
@@ -197,6 +197,8 @@
          <input type="radio" name="radio-course" id="radio-course-javascript"  class="inputSize" >
          <label for="radio-course-javascrip"> -Advanced Javascrip</label>
         </div>
+        <span class="errorText errorTextRadio" id="error_cours"></span>
+
      <div>
      <button class="registrationButton" id="sendButon"> გაგზავნა</button>   
      </div>        
@@ -235,7 +237,7 @@
 
 
 
-  <script src="script1.js"> </script>
+  <script src="course.js"> </script>
   
     
 </body>

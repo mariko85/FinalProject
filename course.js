@@ -1,4 +1,23 @@
 
+let navigation = document.getElementById('navigation')
+let burger = document.getElementById('burger')
+
+burger.addEventListener('click', function(){
+if (navigation.classList.contains('activeNavigation')){
+    //ნავიგაციას აქრობს
+    navigation.classList.remove('activeNavigation')
+    //ბურგერ მენიუდ გადააქცევს x
+    burger.innerHTML= '<i class="fa-solid fa-bars"></i> '
+}
+
+else {
+    //გამოიტანს ნავიგაციის მენიუს
+    navigation.classList.add('activeNavigation')
+    //გამოაჩენს x
+    burger.innerHTML ='<i class="fas fa-times"></i>'
+}
+
+})
 
 
 // sliderConteiner
@@ -151,3 +170,70 @@ courseButton.forEach(item=> {
 })
 
 
+//registraciis validacia
+document.getElementById('registrationForm').addEventListener('submit',function(event){
+  event.preventDefault()
+  let errors={
+  
+  
+  }
+  
+  let form = event.target
+  let firstName =document.getElementById('firstName').value
+  if(firstName.length <2 || firstName ==''){
+    errors.firstName="დაწერეთ მომხმარებლის სახელი"
+  }
+  
+  
+  let lastName =document.getElementById('lastName').value
+  if(lastName.length <2 || lastName ==''){
+    errors.lastName="დაწერეთ მომხმარებლის გვარი"
+  }
+  
+  let idNumber =document.getElementById('idNumber').value
+  if(idNumber.length <11 || idNumber ==''){
+    errors.idNumber="დაწერეთ მომხმარებლის ID"
+  }
+  
+  let phone =document.getElementById('phone').value
+  if(phone.length <9 || phone == ''){
+    errors.phone="დაწერეთ მომხმარებლის ტელ."
+  }
+  
+  
+  let email =document.getElementById('email').value
+  if(email.length <2 || email== ''){
+    errors.email="დაწერეთ მომხმარებლის მეილი"
+  }
+  
+  
+  let cours= false
+  form.querySelectorAll('[name="radio-course"]').forEach(element => {
+  
+    if(element.checked){
+      cours =true
+    }
+    
+  })
+  if(!cours){
+    errors.cours = 'მონიშნეთ რომელიმე კურსი'
+  }
+  
+  for(let item in errors){
+    let errorSpan=document.getElementById('error_'+item)
+    if(errorSpan){
+      errorSpan.innerText=errors[item]
+    }
+  }
+  
+  // form.querySelectorAll('.errorText').forEach(item =>{
+  //   item.textContent=''
+  
+  // })
+  
+  if(Object.keys(errors).length ==0){
+    form.submit()
+  }
+  
+  })
+  

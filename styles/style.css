@@ -605,3 +605,12 @@ text-align: center;
   
 }
 
+.errorText{
+    color: red;
+    font-size: 15px;
+
+}
+
+.errorTextRadio{
+    margin-left: 450px;
+}

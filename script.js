@@ -119,30 +119,102 @@ accordion.forEach( item => {
 })
 
 
-// registracia
+
+
 
 let courseButton = document.querySelectorAll('.registration-course-button')
 let registrationform = document.getElementById('registration-form')
 let courseAbout =document.getElementById('course_about')
+let  closeButton=document.getElementById('closeButton')
+
 
 
 console.log(courseButton)
 
-courseButton.forEach(item => {
-    item.addEventListener('click',function(){
-        registrationform.classList.add('activeRF')
-        courseAbout.classList.add('courseAboutActivi')
-    
-});
+courseButton.forEach(item=> {
+ item.addEventListener('click',function(){
+      registrationform.classList.add('activeRF')
+      courseAbout.classList.add('courseAboutActivi')
+ 
+      closeButton.addEventListener('click' , function(){
+        if (registrationform.classList.contains('activeRF')  )
+          registrationform.classList.remove('activeRF')
+        courseAbout.classList.remove('courseAboutActivi')
+          
+      })
 
-
+  
+})
 
 
 })
 
 
 
-
-
-
-
+//registraciis validacia
+document.getElementById('registration').addEventListener('submit',function(event){
+  event.preventDefault()
+  let errors={
+  
+  
+  }
+  
+  let form = event.target
+  let firstName =document.getElementById('firstName').value
+  if(firstName.length <2 || firstName ==''){
+    errors.firstName="დაწერეთ მომხმარებლის სახელი"
+  }
+  
+  
+  let lastName =document.getElementById('lastName').value
+  if(lastName.length <2 || lastName ==''){
+    errors.lastName="დაწერეთ მომხმარებლის გვარი"
+  }
+  
+  let idNumber =document.getElementById('idNumber').value
+  if(idNumber.length <11 || idNumber >11){
+    errors.idNumber="დაწერეთ მომხმარებლის ID"
+  }
+  
+  let phone =document.getElementById('phone').value
+  if(phone.length <9 || phone >9 || phone == ''){
+    errors.phone="დაწერეთ მომხმარებლის ტელ."
+  }
+  
+  
+  let email =document.getElementById('email').value
+  if(email.length <2 || email== ''){
+    errors.email="დაწერეთ მომხმარებლის მეილი"
+  }
+  
+  
+  let cours= false
+  form.querySelectorAll('[name="radio-course"]').forEach(element => {
+  
+    if(element.checked){
+      cours =true
+    }
+    
+  })
+  if(!cours){
+    errors.cours = 'select your age'
+  }
+  
+  for(let item in errors){
+    let errorSpan=document.getElementById('error_'+item)
+    if(errorSpan){
+      errorSpan.innerText=errors[item]
+    }
+  }
+  
+  // form.querySelectorAll('.errorText').forEach(item =>{
+  //   item.textContent=''
+  
+  // })
+  
+  if(Object.keys(errors).length ==0){
+    form.submit()
+  }
+  
+  })
+  

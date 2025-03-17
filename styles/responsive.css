@@ -1,5 +1,4 @@
 
-
 @media (max-width:768px)  {
     .div_course_news{
 
@@ -11,9 +10,25 @@
 
 
     .div_course{
-    width: 35%;
+    width: 50%;
+}
+#ul_list {
+    flex-direction: column;
+    align-items: center;
+    
+   
+
+}
+.div_course_image{
+    width: 210px;
+
 }
 
+.coverPhotoTexts{
+    top:200px;
+    left: 250px;
+
+}
 #slider{
     width: 50%;
     height: 65vh;
@@ -106,15 +121,42 @@
     width: 740px;
 }
 
-.ul_list{
 
+
+.ul_list {
     flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 20px;}
+
+.ul_list  div{
+           width: 30%;
+        
+        
+        }
+
+
+        .videoclas{
+           padding: 30px;
+           margin: 0 auto;
+           width: 690px;
+        }
+
+  .footer_div {
+    margin: 0 auto;
+ 
+  }
+
+
+
+
+ .div_frame{
+    margin: 0 auto;
+width:600px;
+padding-bottom:  20px;
+}
 }
 
-}
 
 
 
@@ -187,5 +229,39 @@ width: 50%;
     object-fit: cover;
 }
 
+
+
+.footer_div {
+    margin: 0 auto;
+    font-size: 10px;
+    width: 300px;
+    margin-top: 20px;
+ 
+  }
+
+ 
+
+
+ .div_frame{
+    margin: 0 auto;
+width:400px;
+padding-bottom:  20px;
+}
+.SendMessige{
+    width: 200px;
+}
+
+.videoclas{
+    padding: 10px;
+    margin: 0 auto;
+    width: 400px;
+ }
+
+
+ .image_aboutPage_cover {
+    max-width: 55%;
+    height: auto;
+    object-fit: cover;
+}
 
 }
