@@ -614,3 +614,27 @@ text-align: center;
 .errorTextRadio{
     margin-left: 450px;
 }
+
+.coverPhotoTexts{
+    display: block;
+}
+
+
+
+.videoclas{
+    padding-top: 50px;
+    display: block;
+    
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+ }
+
+
+.map{
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
