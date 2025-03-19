@@ -458,7 +458,13 @@ font-size: 50px;
   top: 103px;
   z-index: -1;    
 }
-
+.button_messige{
+    font-size: 30px;
+    border-radius: 20px;
+    border: none;
+background-color: rgb(224, 85, 224);
+padding: 5px;
+}
 
 .arrow{
     position: absolute;
