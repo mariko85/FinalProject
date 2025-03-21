@@ -8,6 +8,10 @@
    
 }
 
+.footertextColor li{
+    margin-bottom: 15px;
+}
+
 .textSize{
     font-size: 25px;
 }
@@ -67,10 +71,13 @@ header{
 
 .caver-photo {
  
-    width:100%;
+    width:93%;
     height: 650px;
-    margin-top: 110px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 103px;
     object-fit: cover;
+    border-radius: 20px;
     position: relative;
     z-index: -1;
 }
@@ -82,7 +89,7 @@ header{
     position: absolute;
     font-size: 50px;
     top: 30%;
-    left: 16%;
+    left: 19%;
     transform: translate(-50%,-50%);
     z-index: -1;
 }
@@ -166,24 +173,26 @@ header{
 
 /* footer div */
 footer{
-    height: 200px;
+
     width: 100%;
     background-color: rgb(240, 133, 231)
 
 }
 
   .footer_div{
-    margin-top: 100px;
+    margin-top: 80px;
     padding: 25px;
-    height: 150px;
+    height: 180px;
     background-color: rgb(240, 133, 231);
     margin-left:35%
-  
-    
-  
-   
+     
+  }
 
+  .line{
     
+    display: inline;
+    margin-left: 20px;
+    background-color: rgb(19, 19, 19);
   }
 
   
@@ -247,11 +256,14 @@ font-size: 20px;
 }
 
 .button_messige{
-    margin-top: 30px;
+    margin-top: 20px;
     border: none;
+    padding: 30px;
 }
 
-
+.textOutline{
+    outline: none;
+}
 
 
 
@@ -261,6 +273,9 @@ font-size: 20px;
     
   }
 
+  .conteiner_user{
+    margin-top: -80px;
+  }
 
   .conteiner_user ul{
     display: flex;
@@ -288,7 +303,7 @@ font-size: 20px;
   .image_aboutPage_cover{
     width: 100%;
     height: 600px;
-    margin-top: 50px;
+    margin-top: 105px;
     border-radius: 30px;
     object-fit: cover;
     opacity: 1;
@@ -309,8 +324,12 @@ font-size: 20px;
    display: block;
    color: aliceblue;
    border: none;
-   padding: 20px;
+   padding: 15px;
  
+}
+
+.messigeContact{
+    margin-bottom: 30px;
 }
 
 .conteinerLeftRight{
@@ -350,10 +369,15 @@ color: rgb(65, 62, 62);
     padding: 80px;
 }
 
+.courseAbout{
+    padding: 80px;
+}
+
 .student_peedback{
     font-size: 30px;
     color: rgb(190, 35, 131);
-    margin:50px;
+    margin-left:50px;
+    margin-top: 150px;
 }
 
 
@@ -555,6 +579,11 @@ text-align: center;
     
 }
 
+.closeButton{
+    margin-left: 720px;
+
+}
+
 .activeRF {
     display: block;
     position: absolute; 
@@ -562,7 +591,8 @@ text-align: center;
     top: 1500px;
     left: 50%;
     background-color: rgb(250, 250, 250);
-    width: 800px;
+    width: 750px;
+    border-radius: 10px;
    
     
 }
@@ -596,7 +626,10 @@ text-align: center;
    margin-top: 45px;
   margin-left: 140px;
   margin-bottom: 25px;
-  background-color: rgb(231, 22, 203);
+  background-color: rgb(224, 85, 224);
+  padding: 15px;
+  border:none;
+  border-radius: 10px;
 
 }
 
@@ -607,7 +640,7 @@ text-align: center;
 
 .footertextColor{
     color: blueviolet;
-    
+      
   
 }
 
