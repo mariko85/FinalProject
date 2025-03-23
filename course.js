@@ -73,6 +73,7 @@ function setslider(){
 
   let  dotelement=dots.querySelectorAll('.dot')
    dotelement[sliderIndex].classList.add('active')
+   
 }
 
 
@@ -118,7 +119,11 @@ function createDots(){
     dot.classList.add('dot')
     dot.setAttribute('data1-id', element.id-1)
     dot.onclick =function(event){
-      let id = event.target.getAttribute('data1-id')
+            
+      
+      let id = Number(event.target.getAttribute("data1-id"));
+      
+      console.log(id)
       sliderIndex =id
       setslider()
     }
