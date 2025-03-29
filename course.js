@@ -50,31 +50,33 @@ function createImg(item){
 
   sliderConteiner.style.backgroundImage = `url("${item.imgUrl}")`
 
+
   sliderConteiner.style.backgroundRepeat ='no-repeat' 
   sliderConteiner.style.backgroundSize = 'cover'
 
 }
-function createH2teg(item){
-let h2tag =document.createElement('h2')
-h2tag.textContent =item.title
-h2tag.classList.add('slider-title')
-return h2tag
+// function createH2teg(item){
+// let h2tag =document.createElement('h2')
+// h2tag.textContent =item.title
+// h2tag.classList.add('slider-title')
+// return h2tag
 
-}
+// }
 
 function setslider(){
   sliderConteiner.innerHTML=" ";
   createImg(data1[sliderIndex])
-  let title = createH2teg(data1[sliderIndex])
+  // let title = createH2teg(data1[sliderIndex])
   let dots =createDots()
 
-  sliderConteiner.appendChild(title)
+  // sliderConteiner.appendChild(title)
   sliderConteiner.appendChild(dots)
 
   let  dotelement=dots.querySelectorAll('.dot')
    dotelement[sliderIndex].classList.add('active')
    
 }
+
 
 
 
@@ -104,6 +106,7 @@ function arrowRight(){
 }
 
 
+
 arrowLeftBtn.addEventListener('click',arrowLeft)
 
 arrowRightBtn.addEventListener('click', arrowRight)
@@ -117,16 +120,18 @@ function createDots(){
 
     let dot=document.createElement('div')
     dot.classList.add('dot')
-    dot.setAttribute('data1-id', element.id-1)
-    dot.onclick =function(event){
+    dot.setAttribute('dataset-id', element.id-1)
+  
+
+     dot.onclick =function(event){
             
       
-      let id = Number(event.target.getAttribute("data1-id"));
+     let id = Number(event.target.getAttribute("dataset-id"));
       
-      console.log(id)
+     console.log(id)
       sliderIndex =id
       setslider()
-    }
+     }
     dots.appendChild(dot)
 
 
